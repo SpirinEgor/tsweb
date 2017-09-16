@@ -11,11 +11,15 @@ body,h1,h2,h3,h4,h5,h6 {
     margin: 5px;
 }
 #mySidebar {
-    width: 200px !important;
+    width: 200px;
+    z-index:3;
 }
 .top-img {
     text-align: center;
 }
 .margin-bottom {
     margin-bottom: 10px;
+}
+.w3-main {
+    margin-left: 200px;
 }
