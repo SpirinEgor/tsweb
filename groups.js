@@ -78,7 +78,7 @@ function generateCard(title, description, link, date) {
                     <h4 class="card-title">${title}</h4>
                     <p class="card-text">${description}</p>
                     <p class="card-text"><b>${date}</b></p>
-                    ${title !== 'No contests yet' ? '<a href="#" class="w3-button w3-black margin-bottom">Enter contest</a>'
+                    ${title !== 'No contests yet' ? `<a href="${link}" class="w3-button w3-black margin-bottom">Enter contest</a>`
                             : ''}
                 </div>
             </div>
