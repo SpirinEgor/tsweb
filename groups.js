@@ -74,7 +74,7 @@ function generateCard(title, description, link, date) {
     var template = `
         <div class="w3-card-2 w3-white training">
             <div class="card">
-                <div class="card-block text-right">
+                <div class="card-block text-right w3-padding">
                     <h4 class="card-title">${title}</h4>
                     <p class="card-text">${description}</p>
                     <p class="card-text"><b>${date}</b></p>
@@ -101,7 +101,7 @@ function getTrainingPlan() {
             var description = this.gsx$description.$t;
             var link = this.gsx$link.$t;
             var card = generateCard(title, description, link, date);
-            $('#training-plan').append(card);
+            $('#training-plan').prepend(card);
         });
     });
 
