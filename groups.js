@@ -91,6 +91,7 @@ function getTrainingPlan() {
     var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheet[currentGroup] + "/od6/public/values?alt=json";
     $.getJSON(url, function(data) {
         var entry = data.feed.entry;
+        document.getElementById('training-plan').innerHTML = '';
         if ($(entry).length === 0) {
             var card = generateCard('No contests yet', '', '', '');
             $('#training-plan').append(card); 
